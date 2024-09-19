@@ -1,8 +1,4 @@
-
 import win32com.client
-
-speaker = win32com.client.Dispatch("SAPI.SpVoice")
-
 import pyttsx3
 import speech_recognition as sr
 import datetime
@@ -10,6 +6,8 @@ import wikipedia
 import webbrowser
 import os
 import smtplib
+
+speaker = win32com.client.Dispatch("SAPI.SpVoice")
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
